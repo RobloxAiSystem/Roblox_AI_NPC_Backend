@@ -1,0 +1,32 @@
+[
+  {
+    "npc_id": "npc_01",
+    "player": "Tester",
+    "message": "hi",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "npc_id": "npc_01",
+    "player": "Tester",
+    "message": "hi",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "npc_id": "npc_01",
+    "player": "Tester",
+    "message": "hi",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]
