@@ -37,9 +37,6 @@ async def load(npc_id: str):
     summary = await store.summarize(npc_id)
     return {"summary": summary, "count": len(mem)}
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
 # ------------------------------------------------------------------
 #  🧾  List all NPC memory files
 # ------------------------------------------------------------------
@@ -82,3 +79,6 @@ async def save_from_request(request: Request):
     npc_id = data.get("npc_id", "unknown")
     memory_store.save_memory(npc_id, data)
     return {"message": "Saved manually"}
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
