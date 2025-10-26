@@ -54,7 +54,7 @@ async def list_npcs():
 # ------------------------------------------------------------------
 @app.get("/api/memory/{npc_id}")
 async def get_full_memory(npc_id: str):
-    events = memory_store.load_memory(npc_id)
+    events = await store.load(npc_id)
     return {"npc_id": npc_id, "events": events, "count": len(events)}
 
 # ------------------------------------------------------------------
